@@ -53,10 +53,10 @@ def build_prompt_from_config(
     if role := config.get("role"):
         prompt_parts.append(f"You are {lowercase_first_char(role.strip())}.")
 
-    instruction = config.get("instruction")
-    if not instruction:
+    instructions = config.get("instructions")
+    if not instructions:
         raise ValueError("Missing required field: 'instruction'")
-    prompt_parts.append(format_prompt_section("Your task is as follows:", instruction))
+    prompt_parts.append(format_prompt_section("Your task is as follows:", instructions))
 
     if constraints := config.get("output_constraints"):
         prompt_parts.append(

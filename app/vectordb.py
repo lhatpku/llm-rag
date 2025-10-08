@@ -4,6 +4,7 @@ from typing import List, Dict, Any
 from sentence_transformers import SentenceTransformer
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
+from paths import DATA_DIR
 
 load_dotenv()
 
@@ -25,7 +26,8 @@ class VectorDB:
         self.embedding_model_name = embedding_model
 
         # Initialize ChromaDB client
-        self.client = chromadb.PersistentClient(path="./chroma_db")
+        os.makedirs(DATA_DIR, exist_ok=True)
+        self.client = chromadb.PersistentClient(path=DATA_DIR)
 
         # Load embedding model
         print(f"Loading embedding model: {self.embedding_model_name}")
@@ -34,7 +36,8 @@ class VectorDB:
         # Get or create collection
         self.collection = self.client.get_or_create_collection(
             name=self.collection_name,
-            metadata={"description": "RAG document collection"},
+            metadata={"description": "RAG document collection","hnsw:space": "cosine",
+                "hnsw:batch_size": 10000},
         )
 
         print(f"Vector database initialized with collection: {self.collection_name}")
@@ -90,7 +93,7 @@ class VectorDB:
             doc_id += 1
 
 
-    def search(self, query: str, n_results: int = 3, threshold: float = 0.3,) -> Dict[str, Any]:
+    def search(self, query: str, n_results: int = 3, threshold: float = 0.5,) -> Dict[str, Any]:
         """
         Search for similar documents in the vector database.
 
@@ -124,7 +127,6 @@ class VectorDB:
                 "distances": [],
                 "ids": [],
             }
-
 
         keep_item = [False] * len(results["ids"][0])
         for i, distance in enumerate(results["distances"][0]):

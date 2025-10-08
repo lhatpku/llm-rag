@@ -1,0 +1,21 @@
+# core app
+gradio
+langchain-core
+langchain-openai
+langchain-groq
+langchain-google-genai
+
+# retrieval
+sentence-transformers
+chromadb
+
+# utilities
+python-dotenv
+PyYAML
+
+# sometimes needed by langchain-openai flows
+openai
+tiktoken
+
+python-docx
+PyPDF2

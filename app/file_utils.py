@@ -10,42 +10,33 @@ from paths import DOCUMENT_DIR
 File loading and saving functions
 '''
 
-def load_publication(publication_external_id="yzN0OCQT7hUS"):
-    """Loads the publication markdown file.
+SUPPORTED_EXTS = {".md", ".txt", ".docx", ".pdf"}
 
-    Returns:
-        Content of the publication as a string.
-
-    Raises:
-        FileNotFoundError: If the file does not exist.
-        IOError: If there's an error reading the file.
-    """
-    publication_fpath = Path(os.path.join(DOCUMENT_DIR, f"{publication_external_id}.md"))
-
-    # Check if file exists
-    if not publication_fpath.exists():
-        raise FileNotFoundError(f"Publication file not found: {publication_fpath}")
-
-    # Read and return the file content
-    try:
-        with open(publication_fpath, "r", encoding="utf-8") as file:
-            return file.read()
-    except IOError as e:
-        raise IOError(f"Error reading publication file: {e}") from e
-
+def _read_text(path: Path) -> str:
+    ext = path.suffix.lower()
+    if ext in {".md", ".txt"}:
+        return path.read_text(encoding="utf-8", errors="ignore")
+    if ext == ".docx":
+        from docx import Document
+        return "\n".join(p.text for p in Document(str(path)).paragraphs)
+    if ext == ".pdf":
+        from PyPDF2 import PdfReader
+        r = PdfReader(str(path))
+        return "\n".join((p.extract_text() or "") for p in r.pages).strip()
+    raise ValueError(f"Unsupported extension: {ext}")
 
 def load_all_publications(publication_dir: str = DOCUMENT_DIR) -> list[str]:
-    """Loads all the publication markdown files in the given directory.
-
-    Returns:
-        List of publication contents.
-    """
-    publications = []
-    for pub_id in os.listdir(publication_dir):
-        if pub_id.endswith(".md"):
-            publications.append(load_publication(pub_id.replace(".md", "")))
-    return publications
-
+    root = Path(publication_dir)
+    if not root.exists():
+        return []
+    docs = []
+    for p in root.iterdir():          
+        if p.is_file():
+            try:
+                docs.append(_read_text(p))
+            except Exception as e:
+                print(f"[warn] Skipping {p}: {e}")
+    return docs
 
 def load_yaml_config(file_path: Union[str, Path]) -> dict:
     """Loads a YAML configuration file.
