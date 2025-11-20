@@ -37,3 +37,6 @@ PyPDF2>=3.0.1,<4.0.0
 # Misc utilities
 huggingface-hub>=0.26.2,<0.27.0
 requests>=2.32.3,<3.0.0
+
+# Evaluation
+deepeval>=0.20.0,<1.0.0

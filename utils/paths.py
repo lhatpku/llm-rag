@@ -12,3 +12,8 @@ DATA_DIR = os.path.join(ROOT_DIR, "data")
 
 DOCUMENT_DIR = os.path.join(ROOT_DIR, "documents")
 
+# Evaluation paths
+EVALUATION_DIR = os.path.join(ROOT_DIR, "evaluation")
+EVALUATION_CASES_PATH = os.path.join(EVALUATION_DIR, "rag_evaluation_cases.json")
+EVALUATION_RESULTS_DIR = os.path.join(OUTPUTS_DIR, "evaluation_results")
+

@@ -208,3 +208,11 @@ __marimo__/
 
 outputs/
 data/
+
+# Evaluation cache and temporary files
+# Keep rag_evaluation_cases.json (ground truth), but ignore cached results
+evaluation/.deepeval-cache.json
+evaluation/.temp-deepeval-cache.json
+evaluation/temp_*.json
+evaluation/*_cache.json
+outputs/evaluation_results/

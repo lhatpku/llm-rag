@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 2,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 3,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 4,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 5,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 6,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 7,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 8,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 9,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 10,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 11,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 12,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 13,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 14,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 15,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 16,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 17,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 18,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 19,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 20,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 21,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 22,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 23,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 24,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 25,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 26,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 27,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 28,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 29,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 30,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 31,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 32,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 33,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 34,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 35,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 36,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 37,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 38,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 39,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 40,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 41,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 42,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 43,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 44,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 45,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 46,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 47,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 48,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 49,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 50,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 51,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 52,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 53,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 54,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 55,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 56,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 57,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 58,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 59,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 60,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 61,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 62,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 63,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 64,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 65,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 66,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 67,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 68,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 69,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 70,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 71,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 72,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 73,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 74,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 75,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 76,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 77,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 78,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 79,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 80,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 81,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 82,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 83,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 84,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 85,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 86,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 87,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 88,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 89,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 90,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  },
+  {
+    "id": 91,
+    "Question": "What are the main differences between Roth and Traditional retirement accounts?",
+    "Answer": "Roth accounts are funded with after-tax dollars and offer tax-free withdrawals, while Traditional accounts are funded with pre-tax dollars and withdrawals are taxed as ordinary income."
+  },
+  {
+    "id": 92,
+    "Question": "How does claiming Social Security benefits before full retirement age affect payments?",
+    "Answer": "Claiming early reduces monthly benefits permanently, with reductions depending on how many months before full retirement age you start."
+  },
+  {
+    "id": 93,
+    "Question": "What is the purpose of Capital Market Assumptions in portfolio construction?",
+    "Answer": "They provide expected returns, volatilities, and correlations for asset classes, forming the basis for optimization and financial simulations."
+  },
+  {
+    "id": 94,
+    "Question": "Why is Monte Carlo simulation used in retirement planning?",
+    "Answer": "It helps model portfolio outcomes under uncertain market conditions, giving probabilistic estimates of plan success."
+  },
+  {
+    "id": 95,
+    "Question": "How does the Nelson-Siegel model help in estimating bond returns?",
+    "Answer": "It fits the yield curve using level, slope, and curvature parameters, allowing for forward-looking bond return estimation."
+  },
+  {
+    "id": 96,
+    "Question": "What is the benefit of using risk-based asset allocation models like Risk Parity?",
+    "Answer": "Risk Parity allocates based on volatility contribution rather than capital, leading to more balanced risk across asset classes."
+  },
+  {
+    "id": 97,
+    "Question": "When might someone choose to do a Roth conversion?",
+    "Answer": "A Roth conversion is beneficial when current tax rates are low, especially before required minimum distributions begin."
+  },
+  {
+    "id": 98,
+    "Question": "What\u2019s the significance of the covariance matrix in portfolio optimization?",
+    "Answer": "It quantifies how asset returns move together and is crucial for understanding total portfolio risk."
+  },
+  {
+    "id": 99,
+    "Question": "How can Social Security spousal benefits be claimed?",
+    "Answer": "A spouse may claim up to 50% of their partner\u2019s benefit, provided the partner has filed, with adjustments based on the claiming age."
+  },
+  {
+    "id": 100,
+    "Question": "What strategies can help create tax-efficient retirement income?",
+    "Answer": "Using a withdrawal order that prioritizes taxable, then tax-deferred, then Roth accounts helps reduce lifetime tax liability."
+  }
+]
