@@ -1,5 +1,5 @@
 # Retirement Planning RAG Assistant — Conversation‑Aware, Memory‑Efficient Chatbot (CLI + Streamlit)
-# Empowering advisors & investors with document-grounded insights for capital markets, portfolios, and retirement planning.
+### Empowering advisors & investors with document-grounded insights for capital markets, portfolios, and retirement planning.
 A production‑ready Retrieval‑Augmented Generation (RAG) assistant that helps **financial advisors and self-directed investors** make evidence-backed retirement and investment decisions. It conversationally surfaces insights from the curated research set under `documents/`, including:
 - Capital market assumption playbooks (`capital_market_assumptions_overview.md`, `CMA_in_portfolio_optimization_and_simulation.md`)
 - Asset-class risk/return and optimization guides (`deriving_asset_class_returns_and_risks.md`, `portfolio_opt_sections_1_3.md`, `portfolio_opt_sections_4_5.md`, `portfolio_opt_sections_6_7.md`)
