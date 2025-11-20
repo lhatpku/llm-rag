@@ -1,10 +1,14 @@
 import os
+
+# Disable ChromaDB telemetry BEFORE importing chromadb to avoid "capture() takes 1 positional argument but 3 were given" warnings
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 import chromadb
 from typing import List, Dict, Any
 from sentence_transformers import SentenceTransformer
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
-from paths import DATA_DIR
+from utils.paths import DATA_DIR
 
 load_dotenv()
 
@@ -13,17 +17,18 @@ class VectorDB:
     A simple vector database wrapper using ChromaDB with HuggingFace embeddings.
     """
 
-    def __init__(self, collection_name: str = None, embedding_model: str = None):
+    def __init__(self, collection_name: str = None, embedding_model: str = None, default_threshold: float = 0.5):
         """
         Initialize the vector database.
 
         Args:
             collection_name: Name of the ChromaDB collection
             embedding_model: HuggingFace model name for embeddings
+            default_threshold: Default similarity threshold for search (can be overridden per query)
         """
         self.collection_name = collection_name
-
         self.embedding_model_name = embedding_model
+        self.default_threshold = default_threshold
 
         # Initialize ChromaDB client
         os.makedirs(DATA_DIR, exist_ok=True)

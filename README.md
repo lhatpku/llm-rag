@@ -1,7 +1,18 @@
-# RAG Assistant — Conversation‑Aware, Memory‑Efficient Chatbot (CLI + Gradio)
+# Retirement Planning RAG Assistant — Conversation‑Aware, Memory‑Efficient Chatbot (CLI + Streamlit)
+# Empowering advisors & investors with document-grounded insights for capital markets, portfolios, and retirement planning.
+A production‑ready Retrieval‑Augmented Generation (RAG) assistant that helps **financial advisors and self-directed investors** make evidence-backed retirement and investment decisions. It conversationally surfaces insights from the curated research set under `documents/`, including:
+- Capital market assumption playbooks (`capital_market_assumptions_overview.md`, `CMA_in_portfolio_optimization_and_simulation.md`)
+- Asset-class risk/return and optimization guides (`deriving_asset_class_returns_and_risks.md`, `portfolio_opt_sections_1_3.md`, `portfolio_opt_sections_4_5.md`, `portfolio_opt_sections_6_7.md`)
+- Yield-curve modeling references (`yield_curve_forecasting_and_nelson_siegel_models.md`)
+- Retirement income, Social Security, and account drawdown strategies (`cash_flows_and_retirement_income.md`, `social_security_basics_and_strategies.md`, `account_types_and_tax_rules.md`)
 
-A production‑ready Retrieval‑Augmented Generation (RAG) assistant that:
-- Talks via **CLI** or **Gradio**
+Example questions the assistant is designed to answer:
+- “How do Nelson–Siegel factors influence bond ladder construction?”
+- “Summarize the CMA workflow before running a Monte Carlo simulation.”
+- “Compare Roth vs Traditional IRA drawdown rules for a client retiring at 62.”
+
+Core capabilities:
+- Talks via **CLI** or **Streamlit**
 - Uses a **vector DB** for document retrieval
 - Maintains **token‑bounded memory** via rolling summarization
 - Provides **structured logging** (rotating logs + JSONL traces)
@@ -15,15 +26,15 @@ A production‑ready Retrieval‑Augmented Generation (RAG) assistant that:
 - **Consistent memory**: `MemoryManager` keeps a short recent window + a running summary (compact & persisted)
 - **Secure prompt discipline**: Answers grounded in Context; Memory used for conversational continuity; graceful “I don’t know.”
 - **Observability**: Human‑readable logs and machine‑readable JSONL traces
-- **Developer UI**: Gradio app with live **Context** and **Memory** panes for instant debugging
+- **Developer UI**: Streamlit dashboard with live **Context** and **Memory** panels for instant debugging
 
 ---
 
 ## Architecture
 ```
-app/
 ├─ app.py                 # CLI entry (baseline)
-├─ app_gradio.py          # Gradio UI (chat + debug panels)
+├─ app_streamlit.py       # Streamlit UI (chat + debug panels)
+utils/
 ├─ memory_utils.py        # Rolling summary memory (persisted + recent window)
 ├─ log_utils.py           # Logger + JSONL trace writer
 ├─ vectordb.py            # Simple vector DB wrapper (add/search)
@@ -36,7 +47,7 @@ app/
 
 ## Requirements
 - Python 3.10+ (3.11 recommended)
-- Dependencies (excerpt): `langchain-core`, `langchain-openai`/`langchain-groq`/`langchain-google-genai`, `sentence-transformers`, `chromadb`, `python-dotenv`, `gradio`
+- Dependencies (excerpt): `langchain-core`, `langchain-openai`/`langchain-groq`/`langchain-google-genai`, `sentence-transformers`, `chromadb`, `python-dotenv`, `streamlit`
 
 ---
 
@@ -44,13 +55,11 @@ app/
 
 ### 1) Clone & install
 ```bash
-git clone <your-repo-url>
-cd llm-rag/app
+git clone <repo-url>
+cd llm-rag
 
-# (recommended) create a venv/conda env, then:
 pip install -r requirements.txt
-# If on Windows + conda:
-# conda install -c conda-forge orjson
+
 ```
 
 ### 2) Configure environment
@@ -76,16 +85,17 @@ python app.py
 # Enter a question or 'quit' to exit:
 ```
 
-## Run (Gradio UI)
+## Run (Streamlit UI)
 ```bash
-python app_gradio.py
-# open the printed local URL (default http://127.0.0.1:7860)
+streamlit run app_streamlit.py
+# open the printed local URL (default http://localhost:8501)
 ```
 
-**UI Panels**
-- **Chat**: conversation with the agent
-- **Retrieved Context (debug)**: exact chunks passed to the LLM
-- **Summarized Memory (debug)**: running summary + recent turns
+**UI Features**
+- **Chat Interface**: Interactive conversation with the agent
+- **Retrieved Context Panel**: Shows exact document chunks retrieved from vector DB with similarity scores
+- **Memory State**: Displays running summary + recent conversation turns
+- **Statistics**: Real-time metrics for retrieval and LLM latency
 
 ---
 
@@ -115,11 +125,58 @@ See `config/prompt_config.yaml`.
 
 ---
 
-## Typical Flow (Gradio)
+## Typical Flow (Streamlit)
 1. User asks a question.
 2. Top‑K chunks retrieved from `VectorDB`.
 3. Prompt built with **Memory + Context + Question**.
 4. LLM returns an answer.
 5. Memory updated; summary refreshes every N turns.
 6. UI displays answer + Context + Memory.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contribution & Compliance
+
+### Contributing
+
+Contributions are welcome! When contributing to this project:
+
+- Follow the existing code style and architecture patterns
+- Ensure all new features include appropriate logging and error handling
+- Update documentation (README.md, docstrings) as needed
+- Test your changes with both CLI and Streamlit interfaces
+
+### Security & Privacy
+
+**API Keys & Environment Variables:**
+- This project requires API keys for LLM providers (OpenAI, Groq, or Google Gemini)
+- **Never commit API keys or `.env` files to version control**
+- Store API keys securely in your local `.env` file (which is gitignored)
+- Review the `.env.example` (if provided) for required variables
+
+**Data Handling:**
+- The assistant processes documents from the `documents/` directory
+- Vector embeddings and conversation memory are stored locally in `data/` and `outputs/` directories
+- Logs and traces may contain query text and retrieved document excerpts
+- For privacy-sensitive deployments, review and configure logging settings in `config/app_config.yaml`
+
+**Reporting Security Issues:**
+- If you discover a security vulnerability, please report it responsibly
+- Do not open public issues for security concerns
+- Contact the project maintainers directly with security-related information
+
+### Compliance Notes
+
+- This software is provided "as is" without warranty (see LICENSE)
+- Users are responsible for ensuring their use complies with:
+  - Terms of service of LLM providers (OpenAI, Groq, Google)
+  - Data privacy regulations applicable to their jurisdiction
+  - Organizational policies regarding AI/ML tool usage
+- The project maintainers are not responsible for misuse of this software
 

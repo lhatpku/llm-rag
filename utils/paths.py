@@ -1,5 +1,6 @@
 import os
 
+# ROOT_DIR is now one level up from utils/ (which was app/)
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 APP_CONFIG_FPATH = os.path.join(ROOT_DIR, "config", "app_config.yaml")

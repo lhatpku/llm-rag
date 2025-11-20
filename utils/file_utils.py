@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 from typing import Union, Optional
 
-from paths import DOCUMENT_DIR
+from utils.paths import DOCUMENT_DIR
 
 '''
 File loading and saving functions

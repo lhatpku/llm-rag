@@ -1,9 +1,50 @@
-llm: "llama-3.1-8b-instant"
+# LLM Configuration
+llm:
+  # Provider preference order: "openai", "groq", "google"
+  # The system will use the first provider with an available API key
+  provider_preference: "openai"
+  
+  # Model names for each provider (used if API key is available)
+  openai_model: "gpt-4o-mini"
+  groq_model: "llama-3.1-8b-instant"
+  google_model: "gemini-2.0-flash"
+  
+  # Temperature setting (0.0 = deterministic)
+  temperature: 0.0
 
+# Vector Database Configuration
 vectordb:
-  threshold: 0.3
-  n_results: 5
+  # Default similarity threshold (lower = more strict, higher = more lenient)
+  # Values typically range from 0.0 to 1.0 for cosine distance
+  threshold: 0.5
+  
+  # Default number of documents to retrieve
+  n_results: 3
 
+# Memory Strategy Configuration
 memory_strategies:
-  trimming_window_size: 6 
-  summarization_max_tokens: 300
+  # Number of turns before summarizing (triggers LLM summarization)
+  summarize_every_n: 6
+  
+  # Number of recent turns to keep in memory window
+  recent_window_n: 8
+
+# Telemetry & Observability Configuration
+logging:
+  # Enable detailed logging of retrieval scores and distances
+  log_scores: true
+  
+  # Enable logging of retrieved document IDs for traceability
+  log_doc_ids: true
+  
+  # Enable query latency tracking (retrieval + LLM call times)
+  log_latency: true
+  
+  # Enable evaluation flags/metrics in traces (for future evaluation suite)
+  log_eval_flags: false
+  
+  # Log full retrieved document content in traces (may increase trace size)
+  log_full_documents: false
+  
+  # Maximum length of document excerpts in logs (if log_full_documents is false)
+  max_doc_excerpt_length: 500
